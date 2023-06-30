@@ -25,6 +25,15 @@ columns = st.columns(3)
 columns[0].button("Python")  
 columns[1].button("Streamlit")  
 columns[2].button("Machine Learning")
+columns[3].button("Django")
+columns[4].button("RPA")
+
+
+
+
+
+
+
 
 st.divider()
 
