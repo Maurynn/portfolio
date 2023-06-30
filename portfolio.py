@@ -35,8 +35,8 @@ st.table(df)
 # Projetos
 st.header("Projetos")
 with st.expander('Video Converter Online'):
-    st.image("imagem/1688093912734.jpg", width=200)
     st.write("Descrição do projeto")
+    st.image("imagem/1688093912734.jpg", width=200)
 
 with st.expander('search Jobs'):
     st.write("Descrição do projeto")
