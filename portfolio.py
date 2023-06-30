@@ -2,7 +2,8 @@ import streamlit as st
 import pandas as pd
 
 # Título do portfólio
-st.title("Portfólio de Mauro Alves")
+#st.title("Portfólio de Mauro Alves")
+st.image("imagem/IMG_20230630_150612.png")
 st.divider()
 # Informações de contato
 st.write("Entre em contato:")
