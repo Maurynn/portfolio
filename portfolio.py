@@ -36,10 +36,12 @@ st.table(df)
 st.header("Projetos")
 with st.expander('Video Converter Online'):
     st.write("Descrição do projeto")
+    st.write("[GitHub](https://videoconvert.streamlit.app/)")
     st.image("imagem/1688093912734.jpg")
 
 with st.expander('search Jobs'):
     st.write("Descrição do projeto")
+    st.write("[GitHub](https://searchajob.streamlit.app/)")
     st.image("imagem/1688094033319.jpg")
 
 # Realizações
