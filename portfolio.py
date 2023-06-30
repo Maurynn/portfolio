@@ -10,9 +10,11 @@ st.divider()
 # Sobre você
 st.header("Sobre mim")
 st.write("""
-Sou um desenvolvedor Python apaixonado por aprendizado de máquina e ciência de dados.
-Tenho experiência em várias bibliotecas e ferramentas, incluindo Streamlit, Pandas, 
-Scikit-Learn e TensorFlow.
+👨🏻‍🎓 Sou formado em Análise e Desenvolvimento de Sistemas e tenho um forte compromisso em me manter atualizado e aprimorar minhas habilidades constantemente. 
+
+📕Além da minha formação acadêmica, busco constantemente cursos e treinamentos complementares para me aprofundar em áreas específicas. Também aplico meus conhecimentos em exercícios e projetos pessoais para testar minhas habilidades práticas.
+
+Estou entusiasmado em encontrar oportunidades para aplicar meu conhecimento e experiência no campo do desenvolvimento de software. Meu objetivo é contribuir com soluções inovadoras e fazer parte de equipes dinâmicas que impulsionem o crescimento e a excelência tecnológica. Estou aberto a desafios estimulantes e estou sempre pronto para aprender e me adaptar às demandas do setor em constante evolução.
 """)
 
 st.divider()
