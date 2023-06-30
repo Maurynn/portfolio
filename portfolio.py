@@ -36,6 +36,7 @@ st.table(df)
 st.header("Projetos")
 with st.expander('Video Converter Online'):
     st.write("Descrição do projeto")
+    st.write("[GitHub](https://videoconvert.streamlit.app/)")
     st.divider()
     st.write("""
     Este projeto consiste em uma aplicação web desenvolvida com a biblioteca Streamlit em Python,
@@ -44,7 +45,6 @@ with st.expander('Video Converter Online'):
     A aplicação fornece feedback durante o processo de conversão e, ao término, disponibiliza o arquivo de áudio resultante para audição e download. 
     Ademais, tooltips informativos estão integrados para auxiliar na compreensão das funcionalidades da aplicação.""")
     st.divider()
-    st.write("[GitHub](https://videoconvert.streamlit.app/)")
     st.image("imagem/1688093912734.jpg")
 
 with st.expander('search Jobs'):
