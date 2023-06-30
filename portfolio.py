@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-import plotly.graph_objects as go
 
 # Título do portfólio
 st.title("Portfólio de Mauro Alves")
