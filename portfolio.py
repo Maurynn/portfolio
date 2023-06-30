@@ -36,7 +36,12 @@ st.table(df)
 st.header("Projetos")
 with st.expander('Video Converter Online'):
     st.write("Descrição do projeto")
-    sr.write("Este projeto consiste em uma aplicação web desenvolvida com a biblioteca Streamlit em Python, projetada para converter arquivos de vídeo em áudio. A ferramenta aceita tanto uploads de arquivos locais em múltiplos formatos, como MP4, MOV, AVI, FLV, WMV, quanto a inserção de links do YouTube. O usuário, após realizar o upload ou fornecer o link, pode iniciar a conversão com um simples clique. A aplicação fornece feedback durante o processo de conversão e, ao término, disponibiliza o arquivo de áudio resultante para audição e download. Ademais, tooltips informativos estão integrados para auxiliar na compreensão das funcionalidades da aplicação.")
+    sr.write("""
+    Este projeto consiste em uma aplicação web desenvolvida com a biblioteca Streamlit em Python,
+    projetada para converter arquivos de vídeo em áudio. A ferramenta aceita tanto uploads de arquivos locais em múltiplos formatos, como MP4, MOV, AVI, FLV, WMV, quanto a inserção de links do  YouTube.
+    O usuário, após realizar o upload ou fornecer o link, pode iniciar a conversão com um simples clique.
+    A aplicação fornece feedback durante o processo de conversão e, ao término, disponibiliza o arquivo de áudio resultante para audição e download. 
+    Ademais, tooltips informativos estão integrados para auxiliar na compreensão das funcionalidades da aplicação.""")
     st.write("[GitHub](https://videoconvert.streamlit.app/)")
     st.image("imagem/1688093912734.jpg")
 
