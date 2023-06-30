@@ -4,10 +4,8 @@ import pandas as pd
 # Título do portfólio
 #st.title("Portfólio de Mauro Alves")
 st.image("imagem/IMG_20230630_151247.png")
+
 st.divider()
-# Informações de contato
-st.write("Entre em contato:")
-st.write("📩: mauro.mn@hotmail.com")
 
 # Sobre você
 st.header("Sobre mim")
@@ -17,12 +15,16 @@ Tenho experiência em várias bibliotecas e ferramentas, incluindo Streamlit, Pa
 Scikit-Learn e TensorFlow.
 """)
 
+st.divider()
+
 # Habilidades
 st.header("Habilidades")
 columns = st.columns(3)  
 columns[0].button("Python")  
 columns[1].button("Streamlit")  
 columns[2].button("Machine Learning")
+
+st.divider()
 
 # Educação
 st.header("Educação")
@@ -32,6 +34,8 @@ df = pd.DataFrame({
     'Anos': ['2020 - 2023']
 })
 st.table(df)
+
+st.divider()
 
 # Projetos
 st.header("Projetos")
@@ -52,6 +56,8 @@ with st.expander('search Jobs'):
     st.write("Descrição do projeto")
     st.write("[GitHub](https://searchajob.streamlit.app/)")
     st.image("imagem/1688094033319.jpg")
+
+st.divider()
 
 # Realizações
 st.header("Realizações")
