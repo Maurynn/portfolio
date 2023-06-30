@@ -36,7 +36,7 @@ st.table(df)
 st.header("Projetos")
 with st.expander('Video Converter Online'):
     st.write("Descrição do projeto")
-    sr.write("""
+    st.write("""
     Este projeto consiste em uma aplicação web desenvolvida com a biblioteca Streamlit em Python,
     projetada para converter arquivos de vídeo em áudio. A ferramenta aceita tanto uploads de arquivos locais em múltiplos formatos, como MP4, MOV, AVI, FLV, WMV, quanto a inserção de links do  YouTube.
     O usuário, após realizar o upload ou fornecer o link, pode iniciar a conversão com um simples clique.
