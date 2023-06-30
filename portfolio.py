@@ -46,7 +46,7 @@ st.divider()
 st.header("Projetos")
 with st.expander('Video Converter Online'):
     st.write("Descrição do projeto")
-    st.write("[App](https://videoconvert.streamlit.app/)")
+    st.write("Acesse o [App](https://videoconvert.streamlit.app/)")
     st.divider()
     st.write("""
     Este projeto consiste em uma aplicação web desenvolvida com a biblioteca Streamlit em Python,
