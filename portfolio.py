@@ -6,7 +6,7 @@ st.title("Portfólio de Mauro Alves")
 st.divider()
 # Informações de contato
 st.write("Entre em contato:")
-st.write("📩: mauro.mn@hotmail.com)
+st.write("📩: mauro.mn@hotmail.com")
 
 # Sobre você
 st.header("Sobre mim")
