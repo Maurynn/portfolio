@@ -55,7 +55,7 @@ with st.expander('Video Converter Online'):
     A aplicação fornece feedback durante o processo de conversão e, ao término, disponibiliza o arquivo de áudio resultante para audição e download. 
     Ademais, tooltips informativos estão integrados para auxiliar na compreensão das funcionalidades da aplicação.""")
     st.divider()
-    st.image("imagem/1688093912734.jpg")
+    st.image("imagem/IMG_20230630_114522.jpg")
 
 with st.expander('search Jobs'):
     st.write("Descrição do projeto")
