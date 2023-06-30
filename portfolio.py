@@ -46,7 +46,7 @@ st.divider()
 st.header("Projetos")
 with st.expander('Video Converter Online'):
     st.write("Descrição do projeto")
-    st.write("[GitHub](https://videoconvert.streamlit.app/)")
+    st.write("[App](https://videoconvert.streamlit.app/)")
     st.divider()
     st.write("""
     Este projeto consiste em uma aplicação web desenvolvida com a biblioteca Streamlit em Python,
@@ -59,8 +59,8 @@ with st.expander('Video Converter Online'):
 
 with st.expander('search Jobs'):
     st.write("Descrição do projeto")
-    st.write("[GitHub](https://searchajob.streamlit.app/)")
-    st.image("imagem/1688094033319.jpg")
+    st.write("[App](https://searchajob.streamlit.app/)")
+    st.image("imagem/IMG_20230630_155903.jpg")
 
 st.divider()
 
