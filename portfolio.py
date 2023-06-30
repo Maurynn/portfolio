@@ -40,6 +40,7 @@ with st.expander('Video Converter Online'):
 
 with st.expander('search Jobs'):
     st.write("Descrição do projeto")
+    st.image("imagem/1688094033319.jpg")
 
 # Realizações
 st.header("Realizações")
