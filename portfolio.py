@@ -35,6 +35,7 @@ st.header("Educação")
 df = pd.DataFrame({
     'Instituição': ['Universidade Paulista'],
     'Grau': ['Superior Completo'],
+    'Curso':['Análise e Desenvolvimento de Sistemas'],
     'Ano': ['2020 - 2023']
 })
 st.table(df)
