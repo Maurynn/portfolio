@@ -59,16 +59,17 @@ with st.expander('Video Converter Online'):
 
 with st.expander('search Jobs'):
     st.write("Descrição do projeto")
-    st.write("""Buscador de Vagas para Desenvolvedores (Streamlit)
+    st.write("Acesse o [App](https://searchajob.streamlit.app/)")
+    st.divider()
+    st.write("""
+    Buscador de Vagas para Desenvolvedores (Streamlit)
 
     Esta aplicação web, criada com Python e Streamlit, permite que desenvolvedores pesquisem vagas de emprego em tempo real. 
     Utilizando a API do Adzuna, a aplicação retorna uma lista de vagas baseadas nas habilidades e localização inseridas pelo usuário. 
     Além disso, a aplicação analisa as descrições das vagas e gera uma nuvem de palavras com as habilidades mais requisitadas, 
     fornecendo um vislumbre das tendências do mercado. Também utiliza a biblioteca Pygments para realçar trechos de código nas descrições das vagas, melhorando a legibilidade.""")
-    st.write("[App](https://searchajob.streamlit.app/)")
     st.image("imagem/IMG_20230630_155903.jpg")
-
-st.divider()
+    st.divider()
 
 # Realizações
 #st.header("Realizações")
