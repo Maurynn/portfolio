@@ -3,7 +3,7 @@ import pandas as pd
 
 # Título do portfólio
 st.title("Portfólio de Mauro Alves")
-
+st.divider()
 # Informações de contato
 st.write("Entre em contato:")
 st.write("📧: seuemail@gmail.com")
