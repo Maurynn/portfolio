@@ -33,7 +33,7 @@ st.header("Educação")
 df = pd.DataFrame({
     'Instituição': ['Universidade Paulista'],
     'Grau': ['Superior Completo'],
-    'Anos': ['2020 - 2023']
+    'Ano': ['2020 - 2023']
 })
 st.table(df)
 
@@ -62,6 +62,6 @@ with st.expander('search Jobs'):
 st.divider()
 
 # Realizações
-st.header("Realizações")
-with st.expander('Nome da Realização'):
-    st.write("Descrição da realização")
+#st.header("Realizações")
+#with st.expander('Nome da Realização'):
+    #st.write("Descrição da realização")
