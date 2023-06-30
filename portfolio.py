@@ -3,7 +3,7 @@ import pandas as pd
 
 # Título do portfólio
 #st.title("Portfólio de Mauro Alves")
-st.image("imagem/IMG_20230630_150612.png")
+st.image("imagem/IMG_20230630_151247.png")
 st.divider()
 # Informações de contato
 st.write("Entre em contato:")
