@@ -2,12 +2,12 @@ import streamlit as st
 import pandas as pd
 
 # Título do portfólio
-#st.title("Portfólio de Mauro Alves")
+st.divider()
 st.image("imagem/IMG_20230630_151247.png")
 
 st.divider()
 
-# Sobre você
+# Sobre você 
 st.header("Sobre mim")
 st.write("""
 👨🏻‍🎓 Sou formado em Análise e Desenvolvimento de Sistemas e tenho um forte compromisso em me manter atualizado e aprimorar minhas habilidades constantemente. 
