@@ -4,7 +4,20 @@ import pandas as pd
 
 # Título do portfólio
 st.divider()
-st.image("imagem/IMG_20230703_120107.png")
+
+st.markdown("""
+<style>
+.img-shadow {
+    box-shadow: 10px 10px 5px grey;
+}
+</style>
+<img src='imagem/IMG_20230703_120107.png' class='img-shadow' width='400px'></img>
+""", unsafe_allow_html=True)
+
+
+
+
+#st.image("imagem/IMG_20230703_120107.png")
 
 st.markdown("""
     <a href="https://github.com/Maurynn" target="_blank" style="margin-right: 15px; text-decoration: none">
