@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
-import matplotlib.pyplot as plt
+import plotly.graph_objects as go
+
 
 
 # Título do portfólio
@@ -34,35 +35,23 @@ habilidades = {
     'RPA': 70,
 }
 
-# Cria a figura e o eixo do matplotlib
-fig, ax = plt.subplots()
+# Cria o gráfico de barras horizontais
+fig = go.Figure(go.Bar(
+            x=list(habilidades.values()),
+            y=list(habilidades.keys()),
+            orientation='h',
+            marker_color='rgb(26, 118, 255)'
+))
 
-# Cria as barras horizontais
-ax.barh(range(len(habilidades)), list(habilidades.values()), color='skyblue')
+# Adiciona o título
+fig.update_layout(title_text='Minhas Habilidades', title_x=0.5)
 
-# Define os rótulos y como os nomes das habilidades
-ax.set_yticks(range(len(habilidades)))
-ax.set_yticklabels(list(habilidades.keys()))
-
-# Define os limites x entre 0 e 100
-ax.set_xlim([0, 100])
-
-# Remove os contornos do gráfico
-for spine in ax.spines.values():
-    spine.set_visible(False)
-
-# Remove os ticks do eixo x
-ax.tick_params(axis='x', which='both', bottom=False, top=False, labelbottom=False)
-
-# Adiciona as etiquetas de valor em cada barra
-for i, v in enumerate(habilidades.values()):
-    ax.text(v, i, f' {v}', color='black', va='center')
-
-# Título do gráfico
-#ax.set_title('Minhas Habilidades')
+# Remove o eixo y
+fig.update_yaxes(showticklabels=False)
 
 # Mostra o gráfico no Streamlit
-columns[1].pyplot(fig)
+columns[1].plotly_chart(fig)
+
 
 
 st.divider()
