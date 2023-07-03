@@ -7,10 +7,10 @@ st.divider()
 st.image("imagem/IMG_20230703_120107.png")
 
 st.markdown("""
-    <a href="https://github.com/Maurynn" target="_blank" style="margin-right: 15px">
+    <a href="https://github.com/Maurynn" target="_blank" style="margin-right: 15px; text-decoration: none">
         <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="Github logo" width="15" height="15">
     </a>
-    <a href="https://linkedin.com/in/maurosp" target="_blank" style="margin-right: 15px">
+    <a href="https://linkedin.com/in/maurosp" target="_blank" style="margin-right: 15px; text-decoration: none">
         <img src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg" alt="LinkedIn logo" width="15" height="15">
     </a>
     <a href="https://instagram.com/maurinn?igshid=ZDc4ODBmNjlmNQ==" target="_blank" style="margin-right: 15px">
