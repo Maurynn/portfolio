@@ -13,10 +13,6 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# O restante do seu aplicativo vai aqui
-st.title("Seu Portfólio")
-# ...
-
 # Título do portfólio
 st.divider()
 st.image("imagem/IMG_20230630_151247.png")
