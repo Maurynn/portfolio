@@ -6,7 +6,6 @@ st.divider()
 st.image("imagem/IMG_20230630_151247.png")
 
 st.divider()
-st.markdown("<div style='text-align: center'>Sou um desenvolvedor Python apaixonado por aprendizado de máquina e ciência de dados. Tenho experiência em várias bibliotecas e ferramentas, incluindo Streamlit, Pandas, Scikit-Learn e TensorFlow.</div>", unsafe_allow_html=True)
 
 # Sobre você 
 st.header("Sobre mim")
