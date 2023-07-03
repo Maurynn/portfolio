@@ -5,19 +5,7 @@ import pandas as pd
 # Título do portfólio
 st.divider()
 
-st.markdown("""
-<style>
-.img-shadow {
-    box-shadow: 10px 10px 5px grey;
-}
-</style>
-<img src='imagem/IMG_20230703_120107.png' class='img-shadow' width='800px'></img>
-""", unsafe_allow_html=True)
-
-
-
-
-#st.image("imagem/IMG_20230703_120107.png")
+st.image("imagem/IMG_20230703_120107.png")
 
 st.markdown("""
     <a href="https://github.com/Maurynn" target="_blank" style="margin-right: 15px; text-decoration: none">
@@ -72,7 +60,7 @@ st.table(df)
 st.divider()
 
 # Projetos
-st.header("Projetos")
+st.header("Projetos Principais")
 with st.expander('Video Converter Online'):
     st.write("Descrição do projeto")
     st.write("Acesse o [App](https://videoconvert.streamlit.app/)")
