@@ -13,6 +13,9 @@ st.markdown("""
     <a href="https://linkedin.com/in/maurosp" target="_blank">
         <img src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg" alt="LinkedIn logo" width="20" height="20">
     </a>
+    <a href="https://instagram.com/maurinn?igshid=ZDc4ODBmNjlmNQ==" target="_blank">
+        <img src="https://instagram.com/static/images/ico/favicon.ico/36b3ee2d91ed.ico" alt="Instagram logo" width="30" height="30">
+    </a>
 """, unsafe_allow_html=True)
 
 st.divider()
