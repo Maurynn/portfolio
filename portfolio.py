@@ -5,7 +5,7 @@ st.markdown(
     """
     <style>
     .reportview-container {
-        background: url("URL_DA_IMAGEM") no-repeat center center fixed;
+        background: url("imagem/pngwing.png") no-repeat center center fixed;
         background-size: cover;
     }
     </style>
