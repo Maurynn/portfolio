@@ -1,18 +1,6 @@
 import streamlit as st
 import pandas as pd
 
-st.markdown(
-    """
-    <style>
-    .reportview-container {
-        background: url("imagem/pngwing.png") no-repeat center center fixed;
-        background-size: cover;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
-
 # Título do portfólio
 st.divider()
 st.image("imagem/IMG_20230630_151247.png")
