@@ -1,5 +1,7 @@
 import streamlit as st
 import pandas as pd
+import matplotlib.pyplot as plt
+
 
 # Título do portfólio
 st.divider()
@@ -21,12 +23,47 @@ st.divider()
 
 # Habilidades
 st.header("Habilidades")
-columns = st.columns(5)  
-columns[0].button("Python")  
-columns[1].button("Streamlit")  
-columns[2].button("Git")
-columns[3].button("Django")
-columns[4].button("RPA")
+columns = st.columns(2)  
+
+# Dados das habilidades
+habilidades = {
+    'Python': 90,
+    'Streamlit': 80,
+    'Git': 75,
+    'Django': 85,
+    'RPA': 70,
+}
+
+# Cria a figura e o eixo do matplotlib
+fig, ax = plt.subplots()
+
+# Cria as barras horizontais
+ax.barh(range(len(habilidades)), list(habilidades.values()), color='skyblue')
+
+# Define os rótulos y como os nomes das habilidades
+ax.set_yticks(range(len(habilidades)))
+ax.set_yticklabels(list(habilidades.keys()))
+
+# Define os limites x entre 0 e 100
+ax.set_xlim([0, 100])
+
+# Remove os contornos do gráfico
+for spine in ax.spines.values():
+    spine.set_visible(False)
+
+# Remove os ticks do eixo x
+ax.tick_params(axis='x', which='both', bottom=False, top=False, labelbottom=False)
+
+# Adiciona as etiquetas de valor em cada barra
+for i, v in enumerate(habilidades.values()):
+    ax.text(v, i, f' {v}', color='black', va='center')
+
+# Título do gráfico
+ax.set_title('Minhas Habilidades')
+
+# Mostra o gráfico no Streamlit
+columns[1].pyplot(fig)
+
 
 st.divider()
 
