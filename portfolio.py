@@ -1,6 +1,22 @@
 import streamlit as st
 import pandas as pd
 
+st.markdown(
+    """
+    <style>
+    .reportview-container {
+        background: url("URL_DA_IMAGEM") no-repeat center center fixed;
+        background-size: cover;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+# O restante do seu aplicativo vai aqui
+st.title("Seu Portfólio")
+# ...
+
 # Título do portfólio
 st.divider()
 st.image("imagem/IMG_20230630_151247.png")
