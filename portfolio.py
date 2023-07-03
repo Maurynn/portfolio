@@ -11,7 +11,7 @@ st.markdown("""
     box-shadow: 10px 10px 5px grey;
 }
 </style>
-<img src='imagem/IMG_20230703_120107.png' class='img-shadow' width='400px'></img>
+<img src='imagem/IMG_20230703_120107.png' class='img-shadow' width='800px'></img>
 """, unsafe_allow_html=True)
 
 
