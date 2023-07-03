@@ -59,7 +59,7 @@ for i, v in enumerate(habilidades.values()):
     ax.text(v, i, f' {v}', color='black', va='center')
 
 # Título do gráfico
-ax.set_title('Minhas Habilidades')
+#ax.set_title('Minhas Habilidades')
 
 # Mostra o gráfico no Streamlit
 columns[1].pyplot(fig)
