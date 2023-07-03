@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
 
+
+fundo = st.image("imagem/pngwing.png")
 # Título do portfólio
 st.divider()
 st.image("imagem/IMG_20230630_151247.png")
