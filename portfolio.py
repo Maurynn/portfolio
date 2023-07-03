@@ -4,7 +4,7 @@ import pandas as pd
 
 # Título do portfólio
 st.divider()
-st.image("imagem/IMG_20230630_151247.png")
+st.image("imagem/IMG_20230703_120107.png")
 
 st.divider()
 
