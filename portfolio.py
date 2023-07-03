@@ -7,7 +7,7 @@ st.divider()
 st.image("imagem/IMG_20230703_120107.png")
 
 st.markdown("""
-    <a href="https://github.com/Maurynn" target="blank" style="margin-right: 15px">
+    <a href="https://github.com/Maurynn" target="_blank" style="margin-right: 15px">
         <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="Github logo" width="15" height="15">
     </a>
     <a href="https://linkedin.com/in/maurosp" target="_blank" style="margin-right: 15px">
