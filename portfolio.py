@@ -1,8 +1,5 @@
 import streamlit as st
 import pandas as pd
-import plotly.graph_objects as go
-
-
 
 # Título do portfólio
 st.divider()
@@ -24,35 +21,12 @@ st.divider()
 
 # Habilidades
 st.header("Habilidades")
-columns = st.columns(2)  
-
-# Dados das habilidades
-habilidades = {
-    'Python': 90,
-    'Streamlit': 80,
-    'Git': 75,
-    'Django': 85,
-    'RPA': 70,
-}
-
-# Cria o gráfico de barras horizontais
-fig = go.Figure(go.Bar(
-            x=list(habilidades.values()),
-            y=list(habilidades.keys()),
-            orientation='h',
-            marker_color='rgb(26, 118, 255)'
-))
-
-# Adiciona o título
-fig.update_layout(title_text='Minhas Habilidades', title_x=0.5)
-
-# Remove o eixo y
-fig.update_yaxes(showticklabels=False)
-
-# Mostra o gráfico no Streamlit
-columns[1].plotly_chart(fig)
-
-
+columns = st.columns(5)  
+columns[0].button("Python")  
+columns[1].button("Streamlit")  
+columns[2].button("Git")
+columns[3].button("Django")
+columns[4].button("RPA")
 
 st.divider()
 
@@ -104,3 +78,4 @@ with st.expander('search Jobs'):
 #st.header("Realizações")
 #with st.expander('Nome da Realização'):
     #st.write("Descrição da realização")
+
