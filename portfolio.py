@@ -1,6 +1,11 @@
 import streamlit as st
 import pandas as pd
 
+# Configuração da página
+st.set_page_config(
+    layout="wide"
+    }
+)
 
 # Título do portfólio
 st.divider()
