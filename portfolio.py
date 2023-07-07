@@ -41,55 +41,17 @@ Estou entusiasmado em encontrar oportunidades para aplicar meu conhecimento e ex
 st.divider()
 
 # Habilidades
-# Dados de exemplo para as habilidades
 habilidades = {
-    "Python": 0.8,
-    "Streamlit": 0.7,
-    "Git": 0.6,
-    "Django": 0.5,
-    "RPA": 0.4
+    "Python": "Desenvolvimento em Python",
+    "Streamlit": "Criação de aplicativos web com Streamlit",
+    "Git": "Controle de versão com Git",
+    "Django": "Desenvolvimento de aplicações web com Django",
+    "RPA": "Automatização de processos robóticos (RPA)"
 }
 
-# Criar lista de valores e rótulos para o gráfico
-valores = list(habilidades.values())
-rotulos = list(habilidades.keys())
-
-# Criar a figura com o gráfico de barras horizontais
-fig = go.Figure(go.Bar(
-    x=valores,
-    y=rotulos,
-    orientation='h',
-    marker=dict(
-        color=valores,
-        colorscale='Viridis',
-        line=dict(color='rgba(50, 171, 96, 1.0)', width=1),
-    ),
-    hovertemplate='<b>%{y}</b><br>Nível: %{x:.1%}<extra></extra>'
-))
-
-# Configurar o layout da figura
-fig.update_layout(
-    title='Níveis de Habilidades',
-    xaxis=dict(
-        title='Nível',
-        showgrid=False,
-        showticklabels=True,
-        range=[0, 1],
-        tickformat='%'
-    ),
-    yaxis=dict(
-        title='Habilidade',
-        showgrid=False,
-        showticklabels=True,
-        autorange='reversed'
-    ),
-    bargap=0.1,
-    height=400,
-    margin=dict(t=60, b=10),
-)
-
-# Renderizar o gráfico de barras horizontais
-st.plotly_chart(fig, use_container_width=True)
+# Renderizar as habilidades como uma lista com ícones
+for habilidade, descricao in habilidades.items():
+    st.write(f"🔹 {habilidade}: {descricao}")
 st.divider()
 
 # Educação
