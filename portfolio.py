@@ -67,7 +67,8 @@ fig = go.Figure(data=[go.Table(
                 align='center'),
     cells=dict(values=[df.Instituição, df.Grau, df.Curso, df.Ano],
                fill_color='lightcyan',
-               align='center'))
+               align='center',
+               font_size=14))
 ])
 
 # Configurando o layout da figura
