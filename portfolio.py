@@ -57,7 +57,27 @@ df = pd.DataFrame({
     'Curso':['Análise e Desenvolvimento de Sistemas'],
     'Ano': ['2020 - 2023']
 })
-st.table(df)
+
+# Criando a figura com a visualização
+fig = go.Figure(data=[go.Table(
+    header=dict(values=list(df.columns),
+                fill_color='#3f7f93',
+                font_color='white',
+                align='center'),
+    cells=dict(values=[df.Instituição, df.Grau, df.Curso, df.Ano],
+               fill_color='lightcyan',
+               align='center'))
+])
+
+# Configurando o layout da figura
+fig.update_layout(
+    width=600,
+    height=200,
+    margin=dict(l=20, r=20, t=20, b=20),
+)
+
+# Renderizando a figura
+st.plotly_chart(fig, use_container_width=True)
 
 st.divider()
 
