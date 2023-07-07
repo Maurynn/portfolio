@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import plotly.graph_objects as go
+import streamlit_analytics
 
 # Configuração da página
 #st.set_page_config(layout="wide")
@@ -40,13 +41,20 @@ Estou entusiasmado em encontrar oportunidades para aplicar meu conhecimento e ex
 st.divider()
 
 # Habilidades
-st.header("Habilidades")
-columns = st.columns(5)  
-columns[0].button("Python")  
-columns[1].button("Streamlit")  
-columns[2].button("Git")
-columns[3].button("Django")
-columns[4].button("RPA")
+habilidades = {
+    "Python": 0.8,
+    "Streamlit": 0.7,
+    "Git": 0.6,
+    "Django": 0.5,
+    "RPA": 0.4
+}
+
+# Animação das habilidades
+with streamlit_analytics.track():
+    for habilidade, valor in habilidades.items():
+        st.text(habilidade)
+        progress_bar = st.progress(0)
+        progress_bar.progress(valor)
 
 st.divider()
 
