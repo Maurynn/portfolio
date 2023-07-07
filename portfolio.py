@@ -50,11 +50,12 @@ habilidades = {
 }
 
 # Animação das habilidades
-with streamlit_analytics.track():
-    for habilidade, valor in habilidades.items():
-        st.text(habilidade)
-        progress_bar = st.progress(0)
-        progress_bar.progress(valor)
+for habilidade, valor in habilidades.items():
+    st.text(habilidade)
+    progress_bar = st.progress(0)
+    for i in range(101):
+        progress_bar.progress(i)
+        time.sleep(0.01 * valor)
 
 st.divider()
 
