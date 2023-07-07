@@ -42,16 +42,33 @@ st.divider()
 
 # Habilidades
 habilidades = {
-    "Python": "Desenvolvimento em Python",
-    "Streamlit": "Criação de aplicativos web com Streamlit",
-    "Git": "Controle de versão com Git",
-    "Django": "Desenvolvimento de aplicações web com Django",
-    "RPA": "Automatização de processos robóticos (RPA)"
+    "Python": {
+        "descricao": "Desenvolvimento em Python",
+        "nivel": 8
+    },
+    "Streamlit": {
+        "descricao": "Criação de aplicativos web com Streamlit",
+        "nivel": 7
+    },
+    "Git": {
+        "descricao": "Controle de versão com Git",
+        "nivel": 6
+    },
+    "Django": {
+        "descricao": "Desenvolvimento de aplicações web com Django",
+        "nivel": 5
+    },
+    "RPA": {
+        "descricao": "Automatização de processos robóticos (RPA)",
+        "nivel": 4
+    }
 }
 
-# Renderizar as habilidades como uma lista com ícones
-for habilidade, descricao in habilidades.items():
-    st.write(f"🔹 {habilidade}: {descricao}")
+# Renderizar as habilidades como cartões
+for habilidade, info in habilidades.items():
+    st.write(f"## {habilidade}")
+    st.write(f"**Descrição**: {info['descricao']}")
+    st.progress(info['nivel'] / 10)
 st.divider()
 
 # Educação
