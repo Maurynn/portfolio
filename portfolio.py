@@ -41,34 +41,13 @@ Estou entusiasmado em encontrar oportunidades para aplicar meu conhecimento e ex
 st.divider()
 
 # Habilidades
-habilidades = {
-    "Python": {
-        "descricao": "Desenvolvimento em Python",
-        "nivel": 8
-    },
-    "Streamlit": {
-        "descricao": "Criação de aplicativos web com Streamlit",
-        "nivel": 7
-    },
-    "Git": {
-        "descricao": "Controle de versão com Git",
-        "nivel": 6
-    },
-    "Django": {
-        "descricao": "Desenvolvimento de aplicações web com Django",
-        "nivel": 5
-    },
-    "RPA": {
-        "descricao": "Automatização de processos robóticos (RPA)",
-        "nivel": 4
-    }
-}
-
-# Renderizar as habilidades como cartões
-for habilidade, info in habilidades.items():
-    st.write(f"## {habilidade}")
-    st.write(f"**Descrição**: {info['descricao']}")
-    st.progress(info['nivel'] / 10)
+st.header("Habilidades")
+columns = st.columns(5)  
+columns[0].button("Python")  
+columns[1].button("Streamlit")  
+columns[2].button("Git")
+columns[3].button("Django")
+columns[4].button("RPA")
 st.divider()
 
 # Educação
