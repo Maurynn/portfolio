@@ -56,8 +56,7 @@ df = pd.DataFrame({
     'Instituição': ['Universidade Paulista'],
     'Grau': ['Superior Completo'],
     'Curso':['Análise e Desenvolvimento de Sistemas'],
-    'Ano': ['2020 - 2023'],
-    font_size=12
+    'Ano': ['2020 - 2023']
 })
 
 # Criando a figura com a visualização
