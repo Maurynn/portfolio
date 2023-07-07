@@ -72,8 +72,8 @@ fig = go.Figure(data=[go.Table(
 
 # Configurando o layout da figura
 fig.update_layout(
-    width=600,
-    height=200,
+    width=650,
+    height=230,
     margin=dict(l=20, r=20, t=20, b=20),
 )
 
