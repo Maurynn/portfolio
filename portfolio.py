@@ -60,9 +60,11 @@ fig = go.Figure(go.Bar(
     y=rotulos,
     orientation='h',
     marker=dict(
-        color='rgba(50, 171, 96, 0.6)',
-        line=dict(color='rgba(50, 171, 96, 1.0)', width=1)
-    )
+        color=valores,
+        colorscale='Viridis',
+        line=dict(color='rgba(50, 171, 96, 1.0)', width=1),
+    ),
+    hovertemplate='<b>%{y}</b><br>Nível: %{x:.1%}<extra></extra>'
 ))
 
 # Configurar o layout da figura
@@ -72,7 +74,8 @@ fig.update_layout(
         title='Nível',
         showgrid=False,
         showticklabels=True,
-        range=[0, 1]
+        range=[0, 1],
+        tickformat='%'
     ),
     yaxis=dict(
         title='Habilidade',
@@ -81,12 +84,12 @@ fig.update_layout(
         autorange='reversed'
     ),
     bargap=0.1,
-    height=400
+    height=400,
+    margin=dict(t=60, b=10),
 )
 
 # Renderizar o gráfico de barras horizontais
-st.plotly_chart(fig)
-
+st.plotly_chart(fig, use_container_width=True)
 st.divider()
 
 # Educação
