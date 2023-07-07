@@ -41,6 +41,7 @@ Estou entusiasmado em encontrar oportunidades para aplicar meu conhecimento e ex
 st.divider()
 
 # Habilidades
+# Dados de exemplo para as habilidades
 habilidades = {
     "Python": 0.8,
     "Streamlit": 0.7,
@@ -49,13 +50,42 @@ habilidades = {
     "RPA": 0.4
 }
 
-# Animação das habilidades
-for habilidade, valor in habilidades.items():
-    st.text(habilidade)
-    progress_bar = st.progress(0)
-    for i in range(101):
-        progress_bar.progress(i)
-        time.sleep(0.01 * valor)
+# Criar lista de valores e rótulos para o gráfico
+valores = list(habilidades.values())
+rotulos = list(habilidades.keys())
+
+# Criar a figura com o gráfico de barras horizontais
+fig = go.Figure(go.Bar(
+    x=valores,
+    y=rotulos,
+    orientation='h',
+    marker=dict(
+        color='rgba(50, 171, 96, 0.6)',
+        line=dict(color='rgba(50, 171, 96, 1.0)', width=1)
+    )
+))
+
+# Configurar o layout da figura
+fig.update_layout(
+    title='Níveis de Habilidades',
+    xaxis=dict(
+        title='Nível',
+        showgrid=False,
+        showticklabels=True,
+        range=[0, 1]
+    ),
+    yaxis=dict(
+        title='Habilidade',
+        showgrid=False,
+        showticklabels=True,
+        autorange='reversed'
+    ),
+    bargap=0.1,
+    height=400
+)
+
+# Renderizar o gráfico de barras horizontais
+st.plotly_chart(fig)
 
 st.divider()
 
