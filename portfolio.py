@@ -110,10 +110,8 @@ with st.expander('search Jobs'):
     Além disso, a aplicação analisa as descrições das vagas e gera uma nuvem de palavras com as habilidades mais requisitadas, 
     fornecendo um vislumbre das tendências do mercado. Também utiliza a biblioteca Pygments para realçar trechos de código nas descrições das vagas, melhorando a legibilidade.""")
     st.image("imagem/IMG_20230630_155903.jpg")
-    
-    st.divider()
 
-    st.markdown("Developed by: Mauro Alves")
+st.divider()
 
 # Realizações
 #st.header("Realizações")
