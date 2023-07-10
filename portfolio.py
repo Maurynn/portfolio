@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import plotly.graph_objects as go
-import time
 
 # Configuração da página
 #st.set_page_config(layout="wide")
@@ -48,6 +47,7 @@ columns[1].button("Streamlit")
 columns[2].button("Git")
 columns[3].button("Django")
 columns[4].button("RPA")
+
 st.divider()
 
 # Educação
@@ -59,6 +59,12 @@ df = pd.DataFrame({
     'Ano': ['2020 - 2023']
 })
 
+# Verificar o tema atual
+theme = st.get_theme()
+
+# Definir a cor da fonte com base no tema
+font_color = 'black' if theme == 'default' else 'white'
+
 # Criando a figura com a visualização
 fig = go.Figure(data=[go.Table(
     header=dict(values=list(df.columns),
@@ -68,7 +74,7 @@ fig = go.Figure(data=[go.Table(
     cells=dict(values=[df.Instituição, df.Grau, df.Curso, df.Ano],
                fill_color='lightcyan',
                align='center',
-               font_size=14))
+               font=dict(size=14, color=font_color)))  # Definindo o tamanho da fonte e a cor do texto
 ])
 
 # Configurando o layout da figura
@@ -108,13 +114,9 @@ with st.expander('search Jobs'):
     Esta aplicação web, criada com Python e Streamlit, permite que desenvolvedores pesquisem vagas de emprego em tempo real. 
     Utilizando a API do Adzuna, a aplicação retorna uma lista de vagas baseadas nas habilidades e localização inseridas pelo usuário. 
     Além disso, a aplicação analisa as descrições das vagas e gera uma nuvem de palavras com as habilidades mais requisitadas, 
-    fornecendo um vislumbre das tendências do mercado. Também utiliza a biblioteca Pygments para realçar trechos de código nas descrições das vagas, melhorando a legibilidade.""")
+    fornecendo um vislumbre das tendências do mercado. Também utiliza a biblioteca Pygments para realçar trechos de código nasdescrições das vagas, melhorando a legibilidade.""")
     st.image("imagem/IMG_20230630_155903.jpg")
 
 st.divider()
 
-# Realizações
-#st.header("Realizações")
-#with st.expander('Nome da Realização'):
-    #st.write("Descrição da realização")
-            
+st.markdown("Developed by: Mauro Alves")
