@@ -111,6 +111,15 @@ with st.expander('search Jobs'):
     fornecendo um vislumbre das tendências do mercado. Também utiliza a biblioteca Pygments para realçar trechos de código nas descrições das vagas, melhorando a legibilidade.""")
     st.image("imagem/IMG_20230630_155903.jpg")
 
+with st.expander('NFe Data Converter'):
+    st.write("Descrição do projeto")
+    st.write("Acesse o [App](https://xmltoexcel.streamlit.app/)")
+    st.divider()
+    st.write("""
+    O NF-e Data Converter é uma ferramenta que converte arquivos XML de Notas Fiscais Eletrônicas (NF-e) em planilhas Excel bem estruturadas. 
+    Desenvolvido com Python, Streamlit, e pandas, ele não apenas transforma informações complexas em dados legíveis,
+    mas também fornece uma análise rápida de métricas relevantes, como o número total de notas, fornecedores únicos, clientes únicos, entre outros.""")
+    st.image("imagem/IMG_20230630_155903.jpg")
 st.divider()
 
 # Realizações
