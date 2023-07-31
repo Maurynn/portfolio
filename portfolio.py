@@ -119,7 +119,7 @@ with st.expander('NFe Data Converter'):
     O NF-e Data Converter é uma ferramenta que converte arquivos XML de Notas Fiscais Eletrônicas (NF-e) em planilhas Excel bem estruturadas. 
     Desenvolvido com Python, Streamlit, e pandas, ele não apenas transforma informações complexas em dados legíveis,
     mas também fornece uma análise rápida de métricas relevantes, como o número total de notas, fornecedores únicos, clientes únicos, entre outros.""")
-    st.image("imagem/IMG_20230630_155903.jpg")
+    st.image("imagem/IMG_20230731_113109.jpg")
 st.divider()
 
 # Realizações
