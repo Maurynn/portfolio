@@ -100,7 +100,7 @@ with st.expander('Video Converter Online'):
 
 with st.expander('Diabetes Insight'):
     st.write("Descrição do projeto")
-    st.write("Acesse o [App](https://https://prevendo-diabetes.streamlit.app//)")
+    st.write("Acesse o [App](https://https://prevendo-diabetes.streamlit.app/)")
     st.divider()
     st.write("""Sobre a diabetes.
 
