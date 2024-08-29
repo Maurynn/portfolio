@@ -98,6 +98,18 @@ with st.expander('Video Converter Online'):
     st.divider()
     st.image("imagem/IMG_20230630_114522.jpg")
 
+with st.expander('Diabetes Insight'):
+    st.write("Descrição do projeto")
+    st.write("Acesse o [App](https://https://prevendo-diabetes.streamlit.app//)")
+    st.divider()
+    st.write("""Sobre a diabetes.
+
+    A diabetes é uma doença crônica que afeta a forma como o corpo metaboliza a glicose, a principal fonte de energia do organismo.
+    A glicose é obtida a partir dos alimentos que ingerimos e é transportada pelo sangue até as células, onde é utilizada como combustível. Para que isso aconteça, é necessário que o pâncreas produza um hormônio chamado insulina, que facilita a entrada da glicose nas células.
+   Quando o pâncreas não produz insulina suficiente ou quando o organismo não consegue usar adequadamente a insulina que produz, ocorre um aumento da glicose no sangue, chamado de hiperglicemia. 
+   A hiperglicemia crônica pode causar danos em diversos órgãos, como olhos, rins, nervos, coração e vasos sanguíneos.""")
+    #st.image("imagem/IMG_20230630_155903.jpg")
+
 with st.expander('search Jobs'):
     st.write("Descrição do projeto")
     st.write("Acesse o [App](https://searchajob.streamlit.app/)")
